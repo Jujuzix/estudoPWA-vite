@@ -8,16 +8,30 @@
     <link rel="apple-touch-icon" href="images/pwa-icon-256.png" />
     <meta name="theme-color" content="white"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="js/main.js"></script>
+<script type="module" src="js/db.js"></script>
 </head>
 <body class="fullscreen">
-    <div class="container">
-        <h1 class="title">Minha Primeira PWA</h1>
+<div class="container">
+<h1 class="title">Minha primeira PWA</h1>
+<div style="text-align: center; ">
+<img src="images/pwa-icon-256.png" alt="pwa" width="256" height="256">
+</div>
+<div style="text-align: center;">
+    <div>
+        <label for="inputNome">Nome:</label>
+        <input type="text" id="inputNome" placeholder="Digite o nome">
     </div>
-
-
-
-
-    
-    <script src="js/main.js"></script>
+    <div>
+        <label for="inputIdade">Idade:</label>
+        <input type="number" id="inputIdade" placeholder="Digite a idade">
+    </div>
+<button id="btnSalvar">Salvar</button>
+<button id="btnListar">Listar</button>
+</div>
+<div>
+<output></output>
+</div>
+</div>
 </body>
 </html>
